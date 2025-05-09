@@ -27,6 +27,8 @@ public class ConditionalMethods {
 
         WebElement Male_Radio = driver.findElement(By.xpath("//input[@id='gender-male']"));
         Male_Radio.click();
+        WebElement Female_Radio = driver.findElement(By.xpath("//input[@id='gender-female']"));
+        System.out.println("Female Radio button is : "+Female_Radio.isSelected());
         System.out.println("Male Radio button is: "+Male_Radio.isSelected());
 
 
