@@ -12,9 +12,9 @@ public class Test2_XPATH {
 
         driver.get("https://demo.nopcommerce.com/");
 
-        //driver.findElement(By.xpath("//input[@placeholder='Search store']")).sendKeys("Ip");
+        driver.findElement(By.xpath("//input[@placeholder='Search store']")).sendKeys("Ip");
 
-        //driver.findElement(By.xpath("//input[@placeholder='Search store' and @name = 'q']")).sendKeys("Ip");
+        driver.findElement(By.xpath("//input[@placeholder='Search store' and @name = 'q']")).sendKeys("Ip");
         driver.findElement(By.xpath("//a[text()='Apple MacBook Pro']")).click();
 
     }

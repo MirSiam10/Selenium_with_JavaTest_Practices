@@ -12,11 +12,11 @@ public class Test1 {
 
         driver.manage().window().maximize();
 
-       // driver.findElement(By.cssSelector("#small-searchterms")).sendKeys("I-Phone");
-        //driver.findElement(By.linkText("Search")).click();
+       driver.findElement(By.cssSelector("#small-searchterms")).sendKeys("I-Phone");
+       driver.findElement(By.linkText("Search")).click();
 
-        //driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("I-Phone");
-        //driver.findElement(By.cssSelector("input[placeholder='Search store']")).sendKeys("iphone");
+       driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("I-Phone");
+        driver.findElement(By.cssSelector("input[placeholder='Search store']")).sendKeys("iphone");
         driver.findElement(By.cssSelector(".search-box-text[name='q']")).sendKeys("Iphone");
     }
 }
