@@ -1,4 +1,4 @@
-package seleniumTest;
+/*package seleniumTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -15,7 +15,7 @@ public class FluentWait {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
 
-        Wait<WebDriver> myWait = new FluentWait<WebDriver>(driver)
+        /*Wait<WebDriver> myWait = new FluentWait<WebDriver>(driver)
                 .withTimeout(Duration.ofSeconds(30L))
                 .pollingEvery(Duration.ofSeconds(5L))
                 .ignoring(NoSuchElementException.class);
@@ -32,8 +32,8 @@ public class FluentWait {
             }
         });
 
-
         driver.close();
 
     }
 }
+*/
