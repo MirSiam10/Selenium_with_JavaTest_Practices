@@ -24,7 +24,7 @@ public class ConditionalMethods {
 
         boolean status2 = driver.findElement(By.xpath("//input[@id='FirstName']")).isEnabled();
         System.out.println("First Name Field is selected : "+status2);
-
+/////////////////////////////////////////////////////////////////////////////////
         WebElement Male_Radio = driver.findElement(By.xpath("//input[@id='gender-male']"));
         Male_Radio.click();
         WebElement Female_Radio = driver.findElement(By.xpath("//input[@id='gender-female']"));
