@@ -22,7 +22,7 @@ public class HandleBrowserWindows {
 
        Set<String> WindowsID=driver.getWindowHandles();
         System.out.println(WindowsID);
-
+/*
         //Approach 1 :
         List<String> WindowsList = new ArrayList<>(WindowsID);
         String ParentID = WindowsList.get(0);
@@ -30,6 +30,23 @@ public class HandleBrowserWindows {
         System.out.println("parentID is : "+ParentID);
         System.out.println("ChildID is : "+ChildID);
 
+        driver.switchTo().window(ChildID);
+        System.out.println(driver.getTitle());
+
+        driver.switchTo().window(ParentID);
+        System.out.println(driver.getTitle()); */
+
+        // Approach 2  :
+
+        for(String WinID:WindowsID){
+
+            String Title = driver.switchTo().window(WinID).getTitle();
+
+            if (Title.equals("OrangeHRM")){
+                System.out.println(driver.getCurrentUrl());
+            }
+
+        }
 
 
 
