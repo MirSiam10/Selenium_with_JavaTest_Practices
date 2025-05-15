@@ -1,4 +1,4 @@
-package seleniumTest;
+package Handaling_Browser_Windows;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class HandleBrowserWindows {
+public class ParentWindow_ChildWindow {
 
     public static void main(String[] args) {
 
@@ -20,15 +20,15 @@ public class HandleBrowserWindows {
 
         driver.findElement(By.xpath("//a[normalize-space()='OrangeHRM, Inc']")).click();
 
-       Set<String> WindowsID=driver.getWindowHandles();
+        Set<String> WindowsID = driver.getWindowHandles();
         System.out.println(WindowsID);
 
         //Approach 1 :
         List<String> WindowsList = new ArrayList<>(WindowsID);
         String ParentID = WindowsList.get(0);
-        String ChildID =  WindowsList.get(1);
-        System.out.println("parentID is : "+ParentID);
-        System.out.println("ChildID is : "+ChildID);
+        String ChildID = WindowsList.get(1);
+        System.out.println("parentID is : " + ParentID);
+        System.out.println("ChildID is : " + ChildID);
 
         driver.switchTo().window(ChildID);
         System.out.println(driver.getTitle());
@@ -47,9 +47,6 @@ public class HandleBrowserWindows {
             }
 
         }*/
-
-
-
 
     }
 }

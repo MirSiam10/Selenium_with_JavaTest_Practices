@@ -1,4 +1,4 @@
-package seleniumTest;
+package Wait_Methods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

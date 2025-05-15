@@ -1,4 +1,4 @@
-package seleniumTest;
+package Handaling_Browser_Windows;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
